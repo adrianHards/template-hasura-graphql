@@ -24,7 +24,7 @@ Create a `.env` file in the root-directory then copy and paste the following int
 
 ```
 HASURA_URL=http://localhost:8080/v1/graphql
-HASURA_GRAPHQL_ADMIN_SECRET=myadminsecret
+HASURA_GRAPHQL_ADMIN_SECRET=adminsecret
 
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgrespassword
