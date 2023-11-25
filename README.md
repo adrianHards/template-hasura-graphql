@@ -8,10 +8,6 @@ This is a minimal React template built using [Vite](https://vitejs.dev/guide/) (
 
 Simply, Vite is a build tool for developing web applications. SWC is a JavaScript/TypeScript compiler written in Rust. TypeScript is a strongly typed programming language for JavaScript.
 
-## Pipelines
-
-I’ve set up a linting pipeline! This pipeline will be triggered whenever a merge request is made, checking for any lint errors in the pushed code. To resolve any potential errors, please run the command `pnpm lint`.
-
 ## Getting Started
 
 ### Prerequisites
@@ -63,11 +59,7 @@ docker compose stop
 
 If you wish to run the React application independently (i.e., without the involvement of Docker, Hasura, or the Postgres database):
 
-1. Install the latest version of [Node.js](https://nodejs.org/en/). If you are using winget run the following command in PowerShell:
-
-```
-winget install -e --id OpenJS.NodeJS
-```
+1. Install the latest version of [Node.js](https://nodejs.org/en/).
 
 2. Assuming you have already cloned the repository, navigate to the directory:
 
@@ -146,10 +138,6 @@ Within VSC, `CTRL` `SHIFT` `P`, select `Preferences: Open Workspace Settings (JS
 ```
 
 If you wish to override any of the default Prettier settings, create a `.prettierrc` file in your root directory and set the value of properties there.
-
-## Authors
-
-- [Adrian Hards](https://teams.microsoft.com/l/chat/0/0?users=ahards@mfsadmin.com)
 
 <!-- Links: -->
 <!-- https://zenn.dev/kikiki_kiki/scraps/dd849648424dca -->
