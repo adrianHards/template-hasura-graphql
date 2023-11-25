@@ -61,11 +61,7 @@ If you wish to run the React application independently (i.e., without the involv
 
 1. Install the latest version of [Node.js](https://nodejs.org/en/).
 
-2. Assuming you have already cloned the repository, navigate to the directory:
-
-```
-cd webui
-```
+2. Assuming you have already cloned the repository, navigate to the directory.
 
 3. install [pnpm](https://pnpm.io/motivation) globally using `npm`:
 
