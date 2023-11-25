@@ -1,0 +1,40 @@
+services:
+  react-ui:
+    container_name: react-ui
+    build: .
+    image: sgs-ui:react
+    ports:
+      - "3000:3000"
+    command: pnpm run dev
+
+  postgres-db:
+    container_name: postgres-15
+    image: postgres:15
+    ports:
+      - "8081:5432"
+    restart: always
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+
+  graphql-api:
+    container_name: graphql-api
+    image: hasura/graphql-engine:latest
+    ports:
+      - "8080:8080"
+    restart: always
+    environment:
+      HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:${POSTGRES_PASSWORD}@postgres-db:5432/postgres
+      HASURA_GRAPHQL_TEST_DATABASE_URL: postgres://postgres:${POSTGRES_PASSWORD}@postgres:5432/test
+      HASURA_GRAPHQL_ENABLE_CONSOLE: "true"
+      HASURA_GRAPHQL_DEV_MODE: "true"
+      HASURA_GRAPHQL_ENABLED_LOG_TYPES: startup, http-log, webhook-log, websocket-log, query-log
+      HASURA_GRAPHQL_ADMIN_SECRET: ${HASURA_GRAPHQL_ADMIN_SECRET}
+
+volumes:
+  db_data:

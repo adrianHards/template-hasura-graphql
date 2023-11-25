@@ -1,0 +1,10 @@
+query Emails {
+  email {
+    id
+    subject
+    to
+    from
+    date
+    timezone
+  }
+}
