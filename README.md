@@ -34,7 +34,7 @@ POSTGRES_DB=postgres
 2. Run Docker Compose:
 
    ```
-   docker compose -f .\docker-compose.yml up -d
+   docker compose -f docker-compose.yml up -d
    ```
 
    The `init.sql` file, which contains dummy email data, will be executed upon the initial setup of the database. You may modify this file. If you do not wish for the file to run, comment out **line 19** in the `docker-compose` file priopr to running `docker compose`.
