@@ -16,12 +16,16 @@ Simply, Vite is a build tool for developing web applications. SWC is a JavaScrip
 
 [Hasura](https://hasura.io/docs/latest/index/) is a GraphQL engine that connects to your databases and automatically generates a GraphQL API based on your database schema.
 
-### What is an API again?
-An API serves as an intermediary between different applications, facilitating their communication. In this context, it connects a React client to a backend server managing a Postgres database. This communication can involve requests such as data retrieval, subscription, or mutation.
+<details>
+  <summary>What is an API again?</summary>
 
-Web APIs have endpoints, [URLs](https://www.ibm.com/docs/en/cics-ts/5.3?topic=concepts-components-url#dfhtl_uricomp) through which we can access the API. Here, these endpoints serve as access points for sending GraphQL queries; the React app sends an [HTTP request](https://www.codecademy.com/article/http-requests) (a message sent by a client to a server to initiate a specific action) to the API, which then interacts with the database.
+  An API serves as an intermediary between different applications, facilitating their communication. In this context, it connects a React client to a backend server managing a Postgres database. This communication can involve requests such as data retrieval, subscription, or mutation.
 
-Hasura is used to automate the generation of a GraphQL API based on the Postgres database schema. The database schema acts as a "blueprint," defining how data relates to other tables or models within the database. The backend server hosts the GraphQL API.
+   Web APIs have endpoints, [URLs](https://www.ibm.com/docs/en/cics-ts/5.3?topic=concepts-components-url#dfhtl_uricomp) through which we can access the API. Here, these endpoints serve as access points for sending GraphQL queries; the React app sends an [HTTP request](https://www.codecademy.com/article/http-requests) (a message sent by a client to a server to initiate a specific action) to the API, which then interacts with the database.
+
+   Hasura is used to automate the generation of a GraphQL API based on the Postgres database schema. The database schema acts as a "blueprint," defining how data relates to other tables or models within the database. The backend server hosts the GraphQL API.
+
+</details>
 
 ## Getting Started
 
@@ -124,7 +128,7 @@ A library for:
 - **Synchronising**: keeping data consistent across different parts of the application. For example, if data changes on the server, the application needs to ensure that the change is reflected in the user interface.
 - **Updating server state**: i.e. making changes to the data on the server.
 
-# Recommended Extensions
+## Recommended Extensions
 
 I recommend the following extensions for [Visual Studio Code](https://code.visualstudio.com/download) (VSC).
 
