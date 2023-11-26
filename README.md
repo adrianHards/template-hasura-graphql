@@ -2,11 +2,19 @@
   <img src="https://miro.medium.com/max/600/1*RCeGDSIqqW68bS5kYucTvA.png" alt="react-graphql-logos" width="300" />
 </div>
 
-# React
+# Overview
+
+## Template
 
 This is a minimal React template built using [Vite](https://vitejs.dev/guide/) (TypeScript + SWC) with [ESLint](https://eslint.org/docs/latest/) rules.
 
 Simply, Vite is a build tool for developing web applications. SWC is a JavaScript/TypeScript compiler written in Rust. TypeScript is a strongly typed programming language for JavaScript.
+
+## Components
+
+[GraphQL](https://graphql.org/learn/) is a query language for APIs. It provides a more efficient and flexible alternative to traditional REST APIs by allowing clients to request only the specific data they need, and it uses a single endpoint for data retrieval.
+
+[Hasura](https://hasura.io/docs/latest/index/) is a GraphQL engine that connects to your databases and automatically generates a GraphQL API based on your database schema.
 
 ## Getting Started
 
