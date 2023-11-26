@@ -16,6 +16,13 @@ Simply, Vite is a build tool for developing web applications. SWC is a JavaScrip
 
 [Hasura](https://hasura.io/docs/latest/index/) is a GraphQL engine that connects to your databases and automatically generates a GraphQL API based on your database schema.
 
+### What is an API again?
+An API serves as an intermediary between different applications, facilitating their communication. In this context, it connects a React client to a backend server managing a Postgres database. This communication can involve requests such as data retrieval, subscription, or mutation.
+
+Web APIs have endpoints, [URLs](https://www.ibm.com/docs/en/cics-ts/5.3?topic=concepts-components-url#dfhtl_uricomp) through which we can access the API. Here, these endpoints serve as access points for sending GraphQL queries; the React app sends [HTTP requests](https://www.ibm.com/docs/en/cics-ts/5.3?topic=protocol-http-requests) to the API, which then interacts with the database.
+
+Hasura is used to automate the generation of a GraphQL API based on the Postgres database schema. The database schema acts as a "blueprint," defining how data relates to other tables or models within the database. The backend server hosts the GraphQL API.
+
 ## Getting Started
 
 ### Prerequisites
@@ -69,22 +76,20 @@ If you wish to run the React application independently (i.e., without the involv
 
 1. Install the latest version of [Node.js](https://nodejs.org/en/).
 
-2. Assuming you have already cloned the repository, navigate to the directory.
-
-3. install [pnpm](https://pnpm.io/motivation) globally using `npm`:
+2. install [pnpm](https://pnpm.io/motivation) globally using `npm`:
 
 ```
 npm install -g pnpm
 ```
 
-4. Install and run the app locally:
+3. Install and run the app locally:
 
 ```
 pnpm install
 pnpm dev
 ```
 
-5. To run ESLint:
+4. To run ESLint:
 
 ```
 pnpm lint
