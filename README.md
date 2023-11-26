@@ -19,7 +19,7 @@ Simply, Vite is a build tool for developing web applications. SWC is a JavaScrip
 ### What is an API again?
 An API serves as an intermediary between different applications, facilitating their communication. In this context, it connects a React client to a backend server managing a Postgres database. This communication can involve requests such as data retrieval, subscription, or mutation.
 
-Web APIs have endpoints, [URLs](https://www.ibm.com/docs/en/cics-ts/5.3?topic=concepts-components-url#dfhtl_uricomp) through which we can access the API. Here, these endpoints serve as access points for sending GraphQL queries; the React app sends an [HTTP request](https://www.codecademy.com/article/http-requests)(a message sent by a client to a server to initiate a specific action) to the API, which then interacts with the database.
+Web APIs have endpoints, [URLs](https://www.ibm.com/docs/en/cics-ts/5.3?topic=concepts-components-url#dfhtl_uricomp) through which we can access the API. Here, these endpoints serve as access points for sending GraphQL queries; the React app sends an [HTTP request](https://www.codecademy.com/article/http-requests) (a message sent by a client to a server to initiate a specific action) to the API, which then interacts with the database.
 
 Hasura is used to automate the generation of a GraphQL API based on the Postgres database schema. The database schema acts as a "blueprint," defining how data relates to other tables or models within the database. The backend server hosts the GraphQL API.
 
